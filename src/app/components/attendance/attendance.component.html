@@ -1,0 +1,8 @@
+<p *ngIf="chartData.length > 0 && labels.length > 0">
+  <!-- This is its own component so it could be reused elsewhere -->
+  <app-line-graph
+    [title]="chartTitle"
+    [chartData]="chartData"
+    [labels]="labels"
+  ></app-line-graph>
+</p>

@@ -1,0 +1,91 @@
+<ion-list>
+  <ion-item>
+    <div>
+      <ion-label>
+        <strong> Course Code </strong>
+      </ion-label>
+      <ion-label>
+        {{ courseData?.courseInfo?.courseCode }}
+      </ion-label>
+    </div>
+  </ion-item>
+  <ion-item>
+    <div>
+      <ion-label>
+        <strong> Course Name </strong>
+      </ion-label>
+      <ion-label>
+        {{ courseData?.courseInfo?.courseName }}
+      </ion-label>
+    </div>
+  </ion-item>
+  <ion-item>
+    <div>
+      <ion-label>
+        <strong> Course Period </strong>
+      </ion-label>
+      <ion-label>
+        Semester -{{ courseData?.courseInfo?.coursePeriod }}
+      </ion-label>
+    </div>
+  </ion-item>
+  <ion-item>
+    <ion-label>
+      <strong> Credits({{ courseData?.courseInfo?.creditsTotal }}) </strong>
+    </ion-label>
+  </ion-item>
+  <ion-item lines="none">
+    Lecture -
+    <strong>{{ courseData?.courseInfo?.credits?.lecture }} </strong>
+  </ion-item>
+  <ion-item lines="none">
+    Tutorial -
+    <strong>{{ courseData?.courseInfo?.credits?.tutorial }} </strong>
+  </ion-item>
+  <ion-item lines="none">
+    Practical -
+    <strong>{{ courseData?.courseInfo?.credits?.practical }} </strong>
+  </ion-item>
+  <ion-item lines="none">
+    Project -
+    <strong>{{ courseData?.courseInfo?.credits?.project }} </strong>
+  </ion-item>
+  <ion-item>
+    <div>
+      <ion-label>
+        <strong> Course Outcomes(COs)</strong>
+      </ion-label>
+      <ion-grid>
+        <ion-row>
+          <ion-col
+            size="4"
+            *ngFor="let outcome of courseData?.courseInfo?.courseOutcomes"
+          >
+            <ion-button size="small" color="tertiary">
+              {{ outcome }}
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </ion-item>
+  <ion-item>
+    <div>
+      <ion-label>
+        <strong> Mapped to this Course</strong>
+      </ion-label>
+      <ion-grid>
+        <ion-row>
+          <ion-col
+            size="4"
+            *ngFor="let course of courseData?.courseInfo?.mappedCourses"
+          >
+            <ion-button size="small" color="primary">
+              {{ course }}
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </ion-item>
+</ion-list>

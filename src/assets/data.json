@@ -1,0 +1,22 @@
+{
+    "courseInfo": {
+        "courseCode": "BA3102",
+        "courseName": "Quantitative techniques",
+        "courseType": "Program Elective",
+        "coursePeriod": 1,
+        "creditsTotal": 4,
+        "credits": {
+            "lecture": 3,
+            "tutorial": 0,
+            "practical": 1,
+            "project": 0
+        },
+        "courseOutcomes": [ "CO2", "CO4", "CO5", "CO7", "CO13", "CO14"],
+        "mappedCourses": ["P07", "P010", "PO12", "P08"]
+
+    },
+    "attendanceInfo": {
+        "data":  [35, 20, 75, 93, 51, 32, 70, 21, 76, 12, 48, 97],
+        "dates": ["1/7", "2/7", "3/7", "4/7", "5/7", "6/7", "7/7", "8/7", "9/7", "10/7", "11/7", "12/7"]
+    }
+}
